@@ -25,6 +25,25 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    .translated-ltr{
+      margin-top: -40px;
+    }
+    .translated-ltr{
+      margin-top: -40px;
+    }
+    .goog-te-banner-frame{
+      display: none;
+      margin-top: -20px;
+    }
+    .goog-logo-link{
+      display: none !important;
+    }
+    .goog-te-gadget{
+      color: transparent !important;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -39,14 +58,15 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+          <div id="google_element"></div>
+          <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Kannada</a></li>
               <li><a href="#">Hindi</a></li>
               <li><a href="#">Tamil</a></li>
               <li><a href="#">Telagu</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -130,6 +150,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Translator -->
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script src="translate.js"></script>
 
 </body>
 
